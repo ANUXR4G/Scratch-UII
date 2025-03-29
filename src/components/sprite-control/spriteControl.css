@@ -1,0 +1,50 @@
+.sprite_control {
+  height: 50%;
+  width: 100%;
+  background-color: #193a8e;
+  border: 1px solid white;
+  border-radius: 8px;
+  position: relative;
+  padding: 8px;
+  color: white;
+  img {
+    height: 60px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+.sprite_selection,
+.background_selection {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+
+.sprite_selection_container,
+.background_selection_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sprite_selection_container .image_container,
+.background_selection_container .image_container {
+  width: 30%;
+  background-color: red;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #21212145;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #21212137;
+  }
+}

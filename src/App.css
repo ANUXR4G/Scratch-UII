@@ -1,0 +1,77 @@
+header {
+  background-color: #315dfc;
+  padding: var(--padding);
+
+  height: 30px;
+}
+
+.container {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.container .blockly_container {
+  width: 60%;
+  height: 100%;
+  padding: 0px 0 0 15px;
+}
+
+.container .sprite_area {
+  width: 35%;
+  height: 100%;
+  margin-right: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Blockly Styling */
+
+#blocklyDiv {
+  width: 100%;
+  height: 100%;
+  clip-path: inset(0 round 10px);
+}
+
+/* Target Blockly Scrollbar */
+.blocklyScrollbarVertical,
+.blocklyScrollbarHorizontal {
+  width: 9px !important; /* Reduce scrollbar width */
+  background-color: #f0f0f0; /* Scrollbar background */
+}
+
+/* Scrollbar Handle (Draggable part) */
+.blocklyScrollbarHandle {
+  background-color: #4a90e2; /* Scrollbar color */
+  border-radius: 10px; /* Rounded scrollbar */
+}
+
+/* Hover effect on scrollbar */
+.blocklyScrollbarHandle:hover {
+  background-color: #357abd; /* Darker color on hover */
+}
+
+/* Change font family of Blockly toolbox */
+.blocklyToolboxDiv {
+  font-family: "Comic Neue", cursive;
+  background-color: #023a8e;
+  color: white;
+  border-right: 2px solid white;
+}
+
+/* Toolbox categories */
+.blocklyTreeLabel {
+  font-family: "Comic Neue", cursive;
+}
+
+.blocklyMainBackground {
+  fill: #023a8e !important; 
+}
